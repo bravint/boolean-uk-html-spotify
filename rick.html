@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+    <title>Spotify</title>
+</head>
+<body>
+
+    <aside>
+        <div class="asidetop">
+            <div class="logo">
+                <img class="logoMain" src="assets/img/logo.svg" alt="Spotify Logo">
+            </div>
+            <a href="index.html">
+                <div class="navitem">
+                <img src="assets/img/home.svg" alt="home">
+                <p>Home</p>
+            </div>
+            </a>
+            <div class="navitem">
+                <img src="assets/img/search.svg" alt="search">
+                <p>Search</p>
+            </div>
+            <div class="navitem">
+                <img src="assets/img/libreria.svg" alt="library">
+                <p>Library</p>
+            </div>
+            <div class="navitem">
+                <img class="newPlaylist" src="assets/img/add-square.png" alt="make new playlist">
+                <p class="navTitle">PLAYLIST</p>
+            </div>
+            <p class="navPlaylistList">Playlist Name</p>
+            <p class="navPlaylistList">Playlist Name</p>
+            <p class="navPlaylistList">Playlist Name</p>
+            <p class="navPlaylistList">Playlist Name</p>
+            <p class="navPlaylistList">Playlist Name</p>
+            <p class="navPlaylistList">Playlist Name</p>
+            <p class="navPlaylistList">Playlist Name</p>
+        </div>
+        <div class="asideBottom">
+            <div class="navitem">
+                <img src="assets/img/download.svg" alt="download the desktop app">
+                <p>Install app</p>
+            </div>
+            <hr />
+            <div class="navitem">
+                <img class="asideUserIcon" src="assets/img/user.svg" alt="create a new playlist">
+                <p class="asideUserName">John Doe</p>
+            </div>
+        </div>
+    </aside>
+
+    <main>
+        <header>
+            <div>
+            <p class="nonSub">Upgrade</p>
+            </div>
+        </header>
+        <section class="content">
+            <iframe src="https://open.spotify.com/embed/track/4cOdK2wGLETKBW3PvgPWqT?theme=0" width="100%" height="380" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <div class="songInfo">
+            <img src="assets/img/RickAstley.jpg" alt="album art" width="70px">
+            <div class="songTitle">
+                <p class="currentPlayingArtist">
+                    Never Gonna Give You Up
+                </p>
+                <p class="currentPlayingSong">
+                    Rick Astley
+                </p>
+            </div>
+            <div class="songActions">
+                <img class="footerSVG" src="assets/img/nomore.svg" alt="add to liked songs">
+                <img class="footerSVG" src="assets/img/heart.svg" alt="add to playlist">
+            </div>
+        </div>
+
+        <div class= "songControls">
+            <div class="controlsTop">
+                <img class="footerSVG" src="assets/img/shuffle.svg" alt="shuffle songs">
+                <img class="footerSVG" src="assets/img/previous.svg" alt="previous song">
+                <img class="footerSVG playPause" src="assets/img/pause.svg" alt="play/pause">
+                <img class="footerSVG" src="assets/img/next.svg" alt="next song">
+                <img class="footerSVG" src="assets/img/repeat.svg" alt="repeat song">
+            </div>
+            <div class="songProgress">
+                <p class="trackTime">
+                    1:09
+                </p>
+                <div class="progressBar">
+                    <span style="width: 31%"></span>
+                </div>
+                <p class="trackTime">
+                    3:45
+                </p>
+            </div>
+            
+        </div>
+        <div class="spotifyControls">
+            <img class="footerSVG" src="assets/img/queue.svg" alt="view song queue">
+            <img class="footerSVG" src="assets/img/devices.svg" alt="spotify connect">
+            <img class="footerSVG" src="assets/img/volume.svg" alt="song volume">
+            <div class="volumeBar">
+                <span style="width: 50%"></span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
