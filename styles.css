@@ -19,7 +19,7 @@ body {
     display: flex;
 }
 
-aside {
+nav {
     width: 20rem;
     height: calc(100vh - 7rem);
     position: sticky;
@@ -47,8 +47,8 @@ header {
     font-weight: 700;
 }
 
-.navitem img,
-.navitem p {
+.navItem img,
+.navItem p {
     display: inline-block;
     vertical-align: middle;
 }
@@ -57,11 +57,11 @@ header {
     color: #b3b3b3
 }
 
-.navitem img {
+.navItem img {
     width: 30px;
 }
 
-.asideUserIcon {
+.navUserIcon {
     height: 25px;
 }
 
@@ -177,12 +177,12 @@ footer {
     gap: 1rem;
 }
 
-.currentPlayingArtist {
+.currentPlayingSong {
     font-size: 0.8rem;
     font-weight: 700;
 }
 
-.currentPlayingSong {
+.currentPlayingArtist {
     font-size: 0.7rem;
     color: #b3b3b3;
 }

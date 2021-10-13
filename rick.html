@@ -11,26 +11,27 @@
 </head>
 <body>
 
-    <aside>
-        <div class="asidetop">
+    <nav role="navigation">
+
+        <div class="navTop">
             <div class="logo">
                 <img class="logoMain" src="assets/img/logo.svg" alt="Spotify Logo">
             </div>
             <a href="index.html">
-                <div class="navitem">
+                <div class="navItem">
                 <img src="assets/img/home.svg" alt="home">
                 <p>Home</p>
             </div>
             </a>
-            <div class="navitem">
+            <div class="navItem">
                 <img src="assets/img/search.svg" alt="search">
                 <p>Search</p>
             </div>
-            <div class="navitem">
+            <div class="navItem">
                 <img src="assets/img/libreria.svg" alt="library">
                 <p>Library</p>
             </div>
-            <div class="navitem">
+            <div class="navItem">
                 <img class="newPlaylist" src="assets/img/add-square.png" alt="make new playlist">
                 <p class="navTitle">PLAYLIST</p>
             </div>
@@ -42,38 +43,43 @@
             <p class="navPlaylistList">Playlist Name</p>
             <p class="navPlaylistList">Playlist Name</p>
         </div>
-        <div class="asideBottom">
-            <div class="navitem">
+
+        <div class="navBottom">
+            <div class="navItem">
                 <img src="assets/img/download.svg" alt="download the desktop app">
                 <p>Install app</p>
             </div>
             <hr />
-            <div class="navitem">
-                <img class="asideUserIcon" src="assets/img/user.svg" alt="create a new playlist">
-                <p class="asideUserName">John Doe</p>
+            <div class="navItem">
+                <img class="navUserIcon" src="assets/img/user.svg" alt="create a new playlist">
+                <p class="navUserName">John Doe</p>
             </div>
         </div>
-    </aside>
+
+    </nav>
+
 
     <main>
+
         <header>
-            <div>
             <p class="nonSub">Upgrade</p>
-            </div>
         </header>
+
         <section class="content">
             <iframe src="https://open.spotify.com/embed/track/4cOdK2wGLETKBW3PvgPWqT?theme=0" width="100%" height="380" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
         </section>
+
     </main>
 
     <footer>
+
         <div class="songInfo">
             <img src="assets/img/RickAstley.jpg" alt="album art" width="70px">
             <div class="songTitle">
-                <p class="currentPlayingArtist">
+                <p class="currentPlayingSong">
                     Never Gonna Give You Up
                 </p>
-                <p class="currentPlayingSong">
+                <p class="currentPlayingArtist">
                     Rick Astley
                 </p>
             </div>
@@ -96,14 +102,14 @@
                     1:09
                 </p>
                 <div class="progressBar">
-                    <span style="width: 31%"></span>
+                    <span style="width: 32%"></span>
                 </div>
                 <p class="trackTime">
-                    3:45
+                    3:33 
                 </p>
-            </div>
-            
+            </div>   
         </div>
+
         <div class="spotifyControls">
             <img class="footerSVG" src="assets/img/queue.svg" alt="view song queue">
             <img class="footerSVG" src="assets/img/devices.svg" alt="spotify connect">
@@ -112,6 +118,7 @@
                 <span style="width: 50%"></span>
             </div>
         </div>
+
     </footer>
 
 </body>
