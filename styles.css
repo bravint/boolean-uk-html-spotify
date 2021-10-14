@@ -11,11 +11,6 @@ nav ul li a {
     color: grey;
 }
 
-/*.musicGrid a:hover {
-    background: rgba(12, 15, 21, 0.9);
-    border-radius: 10px;
-}*/
-
 .glow:hover {
     color:white;
 }
@@ -88,13 +83,6 @@ header {
 
 .navUserIcon {
     height: 25px;
-}
-
-.navBottom {
-    /*position: sticky;
-    bottom: 6rem;
-    z-index: 50;*/
-    background-color: black;
 }
 
 main {
