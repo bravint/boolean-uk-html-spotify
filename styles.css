@@ -11,13 +11,17 @@ nav ul li a {
     color: grey;
 }
 
-.musicGrid a:hover {
+/*.musicGrid a:hover {
     background: rgba(12, 15, 21, 0.9);
     border-radius: 10px;
-}
+}*/
 
 .glow:hover {
     color:white;
+}
+
+.grow:hover {
+    transform: scale(1.2);
 }
 
 body {
@@ -35,7 +39,13 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
-    font-size: 0.8rem; 
+    font-size: 0.8rem;
+    overflow-y: auto;
+}
+
+nav::-webkit-scrollbar,
+.playlists-list::-webkit-scrollbar{
+    width: 0;
 }
 
 nav ul,
@@ -43,7 +53,6 @@ nav ul,
     list-style: none;
     color: grey;
 }
-
 
 .logo,
 header {
@@ -73,7 +82,7 @@ header {
 }
 
 .playlistList {
-    max-height: 45vh;
+    height: 45vh;
     overflow-y: auto;
 }
 
@@ -82,9 +91,9 @@ header {
 }
 
 .navBottom {
-    position: sticky;
+    /*position: sticky;
     bottom: 6rem;
-    z-index: 50;
+    z-index: 50;*/
     background-color: black;
 }
 
@@ -101,6 +110,7 @@ main {
 header {
     height: 6rem;
     position: sticky;
+    padding: 2rem;
     top: 0;
     background: rgba(12, 15, 21, 0.6);
     flex-direction: row-reverse;
@@ -110,11 +120,13 @@ header {
 .tabs {
     text-transform: uppercase;
 }
+
 .nonSub {
-    margin-right: 1rem;
     padding: 1rem;
     border: 1px solid white;
     border-radius: 90px;
+    color: white;
+    font-size: 0.8rem;
 }
 
 .tabs ul {
@@ -157,9 +169,31 @@ header {
     gap: 1rem;
 }
 
+
+.playBtnContainer {
+    position: relative;
+}
+
+.playImg {
+ width: 60px;
+}
+.playBtn {
+    position: absolute;
+    z-index: 100;
+    top: 40%;
+    left: 40%;
+    visibility: hidden;
+}
+
+.cardImg:hover {
+    opacity: .5;
+}
+
+.playBtnContainer:hover .playBtn{
+    visibility: visible;
+}
 .card {
     max-width: 240px;
-
     display: flex;
     flex-direction: column;
     gap: 0.6rem;
@@ -190,6 +224,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 999;
 }
 
 .spotifyControls,
@@ -205,6 +240,7 @@ footer {
 .currentPlayingSong {
     font-size: 0.8rem;
     font-weight: 700;
+    color: grey;
 }
 
 .currentPlayingArtist {
@@ -225,7 +261,8 @@ footer {
     filter: invert(68%) sepia(12%) saturate(0%) hue-rotate(211deg) brightness(98%) contrast(112%);
 }
 
-.footerSVG:hover {
+.footerSVG:hover,
+.playImg {
     filter: invert(100%) sepia(0%) saturate(7464%) hue-rotate(113deg) brightness(104%) contrast(108%);
 }
 
@@ -267,7 +304,7 @@ footer {
 .progressBar,
 .volumeBar { 
     height: 0.25rem;
-    width:50%;
+    width: 50%;
     background: #555;
 }
 
@@ -281,4 +318,12 @@ footer {
 .progressBar > span:hover,
 .volumeBar >span:hover {
     background-color: rgb(27, 224, 9);
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    display: inline-block;
 }
